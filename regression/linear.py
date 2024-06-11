@@ -100,7 +100,7 @@ class SVDLinRegress:
         return Xtest.dot(self.w) + self.b
 
 
-class scipyRegress:
+class scipyLinRegress:
     def __init__(self):
         self.w = None
         self.b = None

@@ -7,7 +7,7 @@ from regression.linear import (
     NormLinRegress,
     QRLinRegress,
     SVDLinRegress,
-    scipyRegress,
+    scipyLinRegress,
 )
 
 df = pd.read_csv("data.csv")
@@ -24,7 +24,7 @@ for model in [
     NormLinRegress(),
     QRLinRegress(),
     SVDLinRegress(),
-    scipyRegress(),
+    scipyLinRegress(),
 ]:
     model.fit(X, y)
     ypred = model.predict(np.array([[2300, 1300]]))
